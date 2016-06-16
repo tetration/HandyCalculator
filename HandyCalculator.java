@@ -40,7 +40,7 @@ class MainMenu{
 			System.out.println("What would you like to do today sir?\n"+
 			"0 = Quit program\n"+
 			"1 = High School Math \n"+
-			"2 = College Analytic Geomtry\n"+
+			"2 = College Analytic Geometry\n"+
 			"3 = College Calculus\n"+
 			"4 = Carrega dados em um arquivo txt");
 			try{
@@ -59,7 +59,7 @@ class MainMenu{
 
 			switch(loop){
 				case 0:
-					System.out.println("Shutingdown....\n"+
+					System.out.println("Shutting down....\n"+
 					"Thanks for using the HandyCalculator!");
 					break;
 
@@ -69,6 +69,11 @@ class MainMenu{
 
 				case 2:
 					System.out.println("Not Implemented yet");
+					break;
+
+				case 3:
+					System.out.println("Going to College Calculus Menu...");
+					CollegeCalcMenu.ccalcmenu();
 					break;
 				
 				default:

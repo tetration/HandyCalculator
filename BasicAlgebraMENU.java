@@ -32,21 +32,22 @@ class BasicAlgebraMENU{
 		while (loop != 0) {
 			System.out.println("What would you like to do today sir?\n"+
 			"0 = Return to HighSchool math menu\n"+
-			"1 = 2 number sum operation \n"+
-			"2 = 2 number multiplication\n"+
-			"3 = 2 number division\n"+
-			"4 = TEST");
+			"1 = sum operation \n"+
+			"2 = subtract operation \n"+
+			"3 = 2 number multiplication\n"+
+			"4 = 2 number division\n"+
+			"5 = Quadratic Equations Solver");
 			try{
 				loop = in.nextInt();
 			}
 			
 			catch(InputMismatchException  inputmistatchexception) {
-				System.out.println("Erro:Char invalido! Tente novamente!");
+				System.out.println("Error: Invalid char! Try again!");
 				in.nextLine();
 			}
 
 			catch (ArithmeticException arithmeticException) {
-				System.out.println("Valor invalido tente novamente!");
+				System.out.println("Invalid value try again!");
 				in.nextLine();
 			}
 
@@ -58,21 +59,29 @@ class BasicAlgebraMENU{
 					break;
 
 				case 1:
-					System.out.println("2 numbers Sum operation");
+					System.out.println("numbers Sum operation");
 					BasicAlgebra.sum();
 					break;
 
 				case 2:
+					System.out.println("numbers subtraction");
+					BasicAlgebra.subtraction();
+					break;
+
+				case 3:
 					System.out.println("2 numbers multiplication");
 					BasicAlgebra.multiply();
 					break;
 
-				case 3:
+				case 4:
 					System.out.println("2 numbers division");
 					BasicAlgebra.division();
+				case 5:
+					System.out.println("Quadratic Equations");
+					BasicAlgebra.basicquadequation();
 				
 				default:
-					System.out.println("Erro: opcao inexistente"); 
+					System.out.println("Error: not avaliable"); 
 					break;  
 			}
 		}
@@ -82,11 +91,16 @@ class BasicAlgebra{
 	static Scanner in=new Scanner(System.in);
 	public static void sum (){
 		try{
-		System.out.println("Write a number");
-		double n=in.nextDouble();
-		System.out.println("Write another number");
-		double n2=in.nextDouble();
-		double sum= n + n2;
+		System.out.println("Type how many numbers in a row you want to make the operation");
+		int z= in.nextInt();
+		double m[]=setarraynumbers(z);
+		double sum=0;
+		for (int i=0;i<z ;i++ ) {
+			System.out.println(m[i]);
+		}
+		for (int i=0;i<m.length ;i++ ) {
+			sum= sum + m[i];	
+		}
 		System.out.println("Result:"+ sum);
 		}
 		catch(InputMismatchException inputmistatchexception){
@@ -106,8 +120,10 @@ class BasicAlgebra{
 					case 1:
 						sum();
 					break;
+
 					case 2:BasicAlgebraMENU.basicalgemenu();
 					break;
+					
 					default:
 					System.out.println("Invalid option! Please choose 1 or 2");
 					break;
@@ -128,6 +144,86 @@ class BasicAlgebra{
 			
 		}
 	}
+	public static void subtraction (){
+		try{
+		System.out.println("Type how many numbers in a row you want to subtract in this operation\n"+
+		"(The first number will be the number that will get subtracted by the others)");
+		int z= in.nextInt();
+		double m[]=setarraynumbers(z);
+		double subtract=0;
+		double first=m[0];
+		System.out.println("Numbers typed: ");
+		for (int i=0;i<z ;i++ ) {
+			System.out.println(m[i]);
+		}
+		for (int i=1;i<m.length ;i++ ) {
+			subtract= subtract + m[i];	
+		}
+		System.out.println("Result:"+ (first - subtract) );
+		}
+		catch(InputMismatchException inputmistatchexception){
+			System.out.println("Error: Invalid Character. Please type a valid number");
+			in.nextLine();
+		}
+		catch(ArithmeticException inputarithmeticexception){
+			System.out.println("Error: Invalid type of number. Please type a valid number");
+			in.nextLine();
+		}
+		finally{
+			System.out.println("Would you like to do another operation?\n"+
+				"1-Yes \t 2-No(Returns to Basic Algebra Menu)");
+			try{
+				int choice=in.nextInt();
+				switch(choice){
+					case 1:
+						sum();
+					break;
+
+					case 2:BasicAlgebraMENU.basicalgemenu();
+					break;
+					
+					default:
+					System.out.println("Invalid option! Please choose 1 or 2");
+					break;
+				}
+
+			}
+			catch(InputMismatchException inputmistatchexception){
+				System.out.println("Error: Invalid Character. Please type a valid number");
+				in.nextLine();
+				}
+			catch(ArithmeticException inputarithmeticexception){
+			System.out.println("Error: Invalid type of number. Please type a valid number");
+				in.nextLine();
+			}
+			finally{
+				BasicAlgebraMENU.basicalgemenu();
+			}
+			
+		}
+	}
+	public static double [] setarraynumbers(int length){
+		System.out.println("Type how many numbers in a row you want to make the operation");
+		double a[] = new double[length];
+		try{
+			System.out.println("Now lets type each number");
+      		for (int i = 0 ; i <= a.length-1 ; i++ ){
+         			System.out.println("Type the number ("+ (i+1) + ") for your operation");
+            		a[i]= in.nextDouble();
+        	}
+    	}
+        catch(InputMismatchException inMis){
+        		in.nextLine();
+        }
+        catch (ArithmeticException arithmeticException){
+        	in.nextLine();
+        }
+        finally{
+        	System.out.println("Number typing completed!");
+        	return a;
+    	}
+    	
+    }
 	public static void multiply (){
 		try{
 		System.out.println("Multiplicator: \n"+
@@ -216,7 +312,7 @@ class BasicAlgebra{
 				in.nextLine();
 				}
 			catch(ArithmeticException inputarithmeticexception){
-			System.out.println("Error: Invalid type of number. Please type a valid number");
+				System.out.println("Error: Invalid type of number. Please type a valid number");
 				in.nextLine();
 			}
 			finally{
@@ -224,4 +320,83 @@ class BasicAlgebra{
 			}	
 		}
 	}
-}
+	public static void  basicquadequation () {
+			System.out.println("Simple Quadratic Equation Solver\n"+
+   			"Ax(or Ay)^2 + By(or Bx) + C= 0\n"+
+   			"Type the A of the equation, in case it is null(nonexistant) type 0 \n"+
+   			"Atenção!Cuidado pois quando ele não aparece não significa que ele e zero \n"+
+   			"Ex: X + 2X + 9=0, podemos notar nessa equação de primeiro grau que ele não aparece \n"+
+   			"Oque significa que o A equivale a 1.(Seguir o mesmo racíocinio ao colocar o valor de B)");
+
+			try{
+   				double a= in.nextDouble();// Guarda o valor escolhido pelo user em a
+   				System.out.println(" Agora Digite o B da equação, caso ele não exista coloque 0");
+   				double b= in.nextDouble();// Guarda o valor escolhido pelo user em b
+   				System.out.println("Agora o C da equação, caso ele não exista coloque 0");
+   				double c= in.nextDouble();// Guarda o valor escolhido pelo user em c
+   				double Delta= b*b -4*(a * c);// Faz o calculo necessário para descobrir o delta
+   				double solucao  = (-b + Math.sqrt(Delta))/2*a;// calcula a solução 1 é guarda o valor na var solucao
+   				double solucao2 = (-b - Math.sqrt(Delta))/2*a;// calcula a solução 2 é guarda o valor na var solucao2
+   				System.out.println("Sua Equação de 2 Grau resultou em:");
+   				if (Delta>0) {
+      				System.out.println("a equação tem duas raízes reais diferentes, pois seu Delta é maior que 0, \n"+
+      				" elas são as soluções: ");
+      
+   					}// if end
+   				if (Delta==0) {
+      				System.out.println("a equação tem duas raízes reais iguais, pois seu Delta é igual a zero,\n"+
+     				", que são: ");
+   					}// fim do else if
+   
+   				else if (Delta<0) {
+      					System.out.println("a equação não tem raízes reais. Pois seu Delta é menor que zero.");
+
+   				}// fim do else if
+   				System.out.println("Solution 1: " + solucao+" \n"+// Mostra a solução 1 ao user
+   				"Solution 2: " + solucao2);// Mostra a solução 2 ao user
+
+   			}
+   			catch(InputMismatchException inputmistatchexception){
+   				System.out.println("Error: Invalid Character. Please type a valid number");
+				in.nextLine();
+
+   			}
+   			catch(ArithmeticException arithmeticException){
+   				System.out.println("Error: Invalid type of number. Please type a valid number");
+				in.nextLine();
+   			}
+   			finally{
+				System.out.println("Would you like to do another Equation?\n"+
+				"1-Yes \t 2-No(Returns to Basic Algebraic Menu)");
+				try{
+					int choice=in.nextInt();
+					switch(choice){
+						case 1:
+							basicquadequation();
+							break;
+
+						case 2:
+							BasicAlgebraMENU.basicalgemenu();
+							break;
+
+						default:
+							System.out.println("Invalid option! Please choose 1 or 2");
+							break;
+					}
+				}
+				catch(InputMismatchException inputmistatchexception){
+					System.out.println("Error: Invalid Character. Please type a valid number");
+					in.nextLine();
+				}
+				catch(ArithmeticException inputarithmeticexception){
+					System.out.println("Error: Invalid type of number. Please type a valid number");
+					in.nextLine();
+				}
+				finally{
+					BasicAlgebraMENU.basicalgemenu();
+				}
+			}
+			
+	}
+}	
+

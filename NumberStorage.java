@@ -21,8 +21,47 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
 */
-class NumberStorage{
-	public static void DilmaLove{
+import java.util.Scanner;
+import java.util.InputMismatchException;
+import java.io.IOException;
 
-	}
+class NumberStorage{
+	static Scanner in=new Scanner(System.in);
+	static int size;
+	static int m;
+	static double a[] = new double[m];
+	public static double [] setarraynumbers(){
+		System.out.println("Type how many numbers in a row you want to make the operation");
+		try{
+			m = in.nextInt()-1;
+			double a[] = new double[m];
+			System.out.println("Now lets type each number");
+      		for (int i = 0 ; i <= a.length ; i++ ){
+         			System.out.println("Type the number ("+ (i+1) + ") for your operation");
+            		a[i]= in.nextDouble();
+        	}
+        	setlength(m);
+    	}
+        catch(InputMismatchException inMis){
+        		in.nextLine();
+        }
+        catch (ArithmeticException arithmeticException){
+        	in.nextLine();
+        }
+        finally{
+        	System.out.println("Number typing completed!");
+        	return a;
+    	}
+    	
+    }
+    public static void setlength(int length){
+    	size=length;
+    }
+    public static int getanlength(){
+    	return size;
+    }
+	/*public static double getanumbers(int location){
+		double current=a[location];
+		return current;
+	} (Disabled Method due to not working properly)*/
 }
