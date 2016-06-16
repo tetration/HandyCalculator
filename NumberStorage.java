@@ -27,20 +27,20 @@ import java.io.IOException;
 
 class NumberStorage{
 	static Scanner in=new Scanner(System.in);
-	static int size;
-	static int m;
-	static double a[] = new double[m];
-	public static double [] setarraynumbers(){
-		System.out.println("Type how many numbers in a row you want to make the operation");
+  public static int setarraylength(){
+  System.out.println("Type how many numbers in a row you want to make the operation");
+  int m = in.nextInt();
+  return m;
+  }
+	public static double [] setarraynumbers(int length){
+		double a[] = new double[length];
 		try{
-			m = in.nextInt()-1;
-			double a[] = new double[m];
 			System.out.println("Now lets type each number");
-      		for (int i = 0 ; i <= a.length ; i++ ){
+      		for (int i = 0 ; i <= a.length-1 ; i++ ){
          			System.out.println("Type the number ("+ (i+1) + ") for your operation");
             		a[i]= in.nextDouble();
         	}
-        	setlength(m);
+        	return a;
     	}
         catch(InputMismatchException inMis){
         		in.nextLine();
@@ -53,12 +53,6 @@ class NumberStorage{
         	return a;
     	}
     	
-    }
-    public static void setlength(int length){
-    	size=length;
-    }
-    public static int getanlength(){
-    	return size;
     }
 	/*public static double getanumbers(int location){
 		double current=a[location];

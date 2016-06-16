@@ -91,9 +91,8 @@ class BasicAlgebra{
 	static Scanner in=new Scanner(System.in);
 	public static void sum (){
 		try{
-		System.out.println("Type how many numbers in a row you want to make the operation");
-		int z= in.nextInt();
-		double m[]=setarraynumbers(z);
+		int z=NumberStorage.setarraylength();
+		double m[]=NumberStorage.setarraynumbers(z);
 		double sum=0;
 		for (int i=0;i<z ;i++ ) {
 			System.out.println(m[i]);
@@ -148,8 +147,8 @@ class BasicAlgebra{
 		try{
 		System.out.println("Type how many numbers in a row you want to subtract in this operation\n"+
 		"(The first number will be the number that will get subtracted by the others)");
-		int z= in.nextInt();
-		double m[]=setarraynumbers(z);
+		int z= NumberStorage.setarraylength();
+		double m[]=NumberStorage.setarraynumbers(z);
 		double subtract=0;
 		double first=m[0];
 		System.out.println("Numbers typed: ");
@@ -202,37 +201,17 @@ class BasicAlgebra{
 			
 		}
 	}
-	public static double [] setarraynumbers(int length){
-		System.out.println("Type how many numbers in a row you want to make the operation");
-		double a[] = new double[length];
-		try{
-			System.out.println("Now lets type each number");
-      		for (int i = 0 ; i <= a.length-1 ; i++ ){
-         			System.out.println("Type the number ("+ (i+1) + ") for your operation");
-            		a[i]= in.nextDouble();
-        	}
-    	}
-        catch(InputMismatchException inMis){
-        		in.nextLine();
-        }
-        catch (ArithmeticException arithmeticException){
-        	in.nextLine();
-        }
-        finally{
-        	System.out.println("Number typing completed!");
-        	return a;
-    	}
-    	
-    }
 	public static void multiply (){
 		try{
-		System.out.println("Multiplicator: \n"+
-			"Write a number");
-		double z=in.nextDouble();
-		System.out.println("Write another number");
-		double z2=in.nextDouble();
-		double multiply= z * z2;
-		System.out.println("Result:"+ multiply);
+		System.out.println("Multiplicator: ");
+		int z=NumberStorage.setarraylength();
+		double nums[]=NumberStorage.setarraynumbers(z);
+		double result=nums[0];
+		for (int i=1;i<nums.length;i++) {
+			result=result*nums[i];
+		}
+		
+		System.out.println("Result of the multiplication: \n"+ result);
 		}
 		catch(InputMismatchException inputmistatchexception){
 			System.out.println("Error: Invalid Character. Please type a valid number");
@@ -274,13 +253,20 @@ class BasicAlgebra{
 	}
 	public static void division (){
 		try{
-		System.out.println("Write a number");
-		double n=in.nextDouble();
-		System.out.println("Write another number");
-		double n2=in.nextDouble();
-		double division= n / n2;
-		double leaves= n % n2;
-		System.out.println("Result:"+ division + "remainder: "+ leaves);
+			System.out.println("Division: ");
+			int n=NumberStorage.setarraylength();
+			System.out.println("WARNING:\nThe first Number that you type will be the one \n divided by the others");
+			double nums[]=NumberStorage.setarraynumbers(n);
+			double division=nums[0];
+			double remainder=nums[0];
+			System.out.println("After dividing " + nums[0]+" by the numbers below \n");
+			for (int i=1;i<nums.length;i++ ) {
+				division=division/nums[i];
+				remainder=remainder/nums[i];
+				System.out.println(nums[i]+" \t");
+		}
+
+			System.out.println("\n We were left with this division result: "+ division + " remainder: "+ remainder);
 		}
 		catch(InputMismatchException inputmistatchexception){
 			System.out.println("Error: Invalid Character. Please type a valid number");
