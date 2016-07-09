@@ -42,7 +42,8 @@ class MainMenu{
 			"1 = High School Math \n"+
 			"2 = College Analytic Geometry\n"+
 			"3 = College Calculus\n"+
-			"4 = Carrega dados em um arquivo txt");
+			"4 = Percentage Calculations\n"+
+			"5 = Shows program version");
 			try{
 				loop = in.nextInt();
 			}
@@ -68,6 +69,7 @@ class MainMenu{
 					break;
 
 				case 2:
+					System.out.println("Going to College Analytic Geometry...");
 					System.out.println("Not Implemented yet");
 					break;
 
@@ -75,11 +77,49 @@ class MainMenu{
 					System.out.println("Going to College Calculus Menu...");
 					CollegeCalcMenu.ccalcmenu();
 					break;
+
+				case 4:
+					System.out.println("Going to Percentage Calculations Menu");
+					PercentMenu.percentmenu();
+					break;
+
+				case 5:
+					System.out.println("Checking Software version...\n");
+					getversion();
+					break;
 				
 				default:
 					System.out.println("Erro: Nonexistent option. Try again!");
 					break;   
 			}
+		}
+	}
+	public static void getversion(){
+		System.out.println("The HandyCalculator \n Version 0.04\n"+
+			"Press 1 to return to main menu");
+		try{
+			loop=in.nextInt();
+
+			}
+			catch(InputMismatchException  InputMismatchException) {
+				System.out.println("Erro:Char invalido! Tente novamente!");
+				in.nextLine();
+			}
+
+			catch (ArithmeticException arithmeticException) {
+				System.out.println("Valor invalido tente novamente!");
+				in.nextLine();
+			}
+		switch(loop){
+				case 1: 
+					System.out.println("Returning to Mainmenu...\n"+
+					" ");
+					mainmenu();
+					break;
+				default:
+					System.out.println("Erro: Nonexistent option. Try again!");
+					getversion();
+					break;   
 		}
 	}
 }

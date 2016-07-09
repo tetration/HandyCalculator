@@ -29,7 +29,7 @@ class HighSchoolMathMenu{
 	static int loop = -1;
 	public static void hsmathmenu() {
 		while (loop != 0) {
-			System.out.println("Basic Algebra Menu\n"+
+			System.out.println("High School Math Menu\n"+
 			"What would you like to do today sir? \n"+
 			"0 = Return to mainmenu\n"+
 			"1 = Basic Algebra \n"+
@@ -62,7 +62,8 @@ class HighSchoolMathMenu{
 					break;
 
 				case 2:
-					System.out.println("Not Implemented yet");
+					System.out.println("Loading High School Geometry Menu...");
+					HSGEOMenu.hsgeomenu();
 					break;
 				
 				default:

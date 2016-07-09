@@ -118,14 +118,15 @@ class BasicAlgebra{
 				switch(choice){
 					case 1:
 						sum();
-					break;
+						break;
 
-					case 2:BasicAlgebraMENU.basicalgemenu();
-					break;
+					case 2:
+						BasicAlgebraMENU.basicalgemenu();
+						break;
 					
 					default:
-					System.out.println("Invalid option! Please choose 1 or 2");
-					break;
+						System.out.println("Invalid option! Please choose 1 or 2");
+						break;
 				}
 
 			}
@@ -145,20 +146,20 @@ class BasicAlgebra{
 	}
 	public static void subtraction (){
 		try{
-		System.out.println("Type how many numbers in a row you want to subtract in this operation\n"+
-		"(The first number will be the number that will get subtracted by the others)");
-		int z= NumberStorage.setarraylength();
-		double m[]=NumberStorage.setarraynumbers(z);
-		double subtract=0;
-		double first=m[0];
-		System.out.println("Numbers typed: ");
-		for (int i=0;i<z ;i++ ) {
-			System.out.println(m[i]);
-		}
-		for (int i=1;i<m.length ;i++ ) {
-			subtract= subtract + m[i];	
-		}
-		System.out.println("Result:"+ (first - subtract) );
+			System.out.println("Type how many numbers in a row you want to subtract in this operation\n"+
+			"(The first number will be the number that will get subtracted by the others)");
+			int z= NumberStorage.setarraylength();
+			double m[]=NumberStorage.setarraynumbers(z);
+			double subtract=0;
+			double first=m[0];
+			System.out.println("Numbers typed: ");
+			for (int i=0;i<z ;i++ ) {
+				System.out.println(m[i]);
+			}
+			for (int i=1;i<m.length ;i++ ) {
+				subtract= subtract + m[i];	
+			}
+			System.out.println("Result:"+ (first - subtract) );
 		}
 		catch(InputMismatchException inputmistatchexception){
 			System.out.println("Error: Invalid Character. Please type a valid number");
@@ -230,10 +231,12 @@ class BasicAlgebra{
 					case 1:
 						multiply();
 					break;
+
 					case 2:BasicAlgebraMENU.basicalgemenu();
 					break;
+
 					default:
-					System.out.println("Invalid option! Please choose 1 or 2");
+						System.out.println("Invalid option! Please choose 1 or 2");
 					break;
 				}
 
