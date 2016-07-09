@@ -95,8 +95,11 @@ class MainMenu{
 		}
 	}
 	public static void getversion(){
-		System.out.println("The HandyCalculator \n Version 0.04\n"+
-			"Press 1 to return to main menu");
+		System.out.println("The HandyCalculator \n Version 0.051\n"+
+			"Press 1 to return to main menu\n"+
+			"\n"+
+			"Copyright {2016} {Tetration - Rafael Augusto Oliveira} \n"+
+			"Contact: (tetration@outlook.com)");
 		try{
 			loop=in.nextInt();
 

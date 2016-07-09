@@ -9,7 +9,7 @@ class HSGEOMenu {
 			System.out.println("High School Geometry Menu\n"+
 			"What would you like to do today sir? \n"+
 			"0 = Return to High School Math Menu\n"+
-			"1 = Something \n"+
+			"1 = Trigonometry \n"+
 			"2 = Something else \n" +
 			"3 = Something else \n" +
 			"4 = Something else");
@@ -35,7 +35,8 @@ class HSGEOMenu {
 					break;
 
 				case 1:
-					System.out.println("Not implemented yet.");
+					System.out.println("Going to Trigonometry Menu");
+					TrigonoMenu.trigonomenu();
 					break;
 
 				case 2:

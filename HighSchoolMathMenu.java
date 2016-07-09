@@ -34,7 +34,7 @@ class HighSchoolMathMenu{
 			"0 = Return to mainmenu\n"+
 			"1 = Basic Algebra \n"+
 			"2 = Geometry\n"+
-			"3 = Trigonometry\n"+
+			"3 = Nothing Yet\n"+
 			"4 = Carrega dados em um arquivo txt");
 			try{
 				loop = in.nextInt();
