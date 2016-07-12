@@ -28,14 +28,30 @@ class HighSchoolMathMenu{
 	static Scanner in=new Scanner(System.in);
 	static int loop = -1;
 	public static void hsmathmenu() {
-		while (loop != 0) {
-			System.out.println("High School Math Menu\n"+
-			"What would you like to do today sir? \n"+
-			"0 = Return to mainmenu\n"+
-			"1 = Basic Algebra \n"+
-			"2 = Geometry\n"+
-			"3 = Nothing Yet\n"+
-			"4 = Carrega dados em um arquivo txt");
+		System.out.println("\n"+
+			  			"========================================\n"+
+    					"|     High School Math Menu            |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"| 0. Return to MainMenu                |\n"+
+    					"|				                        |\n"+
+    					"| 1.  Basic Algebra Menu               |\n"+ 
+    					"|				                        |\n"+
+    					"|				                        |\n"+
+    					"| 2.  High School Geomtry              |\n"+ 
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 3 = Trigonometry                     |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 4 =  Nothing Yet                     |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Carrega dados em um arquivo txt  |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
+
 			try{
 				loop = in.nextInt();
 			}
@@ -70,6 +86,5 @@ class HighSchoolMathMenu{
 					System.out.println("Error: Nonexistant Option. Try again!");
 					break;   
 			}
-		}
 	}
 }

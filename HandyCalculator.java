@@ -26,8 +26,7 @@ import java.util.InputMismatchException;
 import java.io.IOException;
 public class HandyCalculator {
 	public static void main(String[] args) {
-	System.out.println("The Handy Calculator \n"+
-		"helping high school and college students with their Math-related classes since 2016");
+		MainMenu.welcome();
 		MainMenu.mainmenu();
 	}
 
@@ -35,15 +34,27 @@ public class HandyCalculator {
 class MainMenu{
 	static Scanner in=new Scanner(System.in);
 	static int loop = -1;
+	public static void welcome(){
+		System.out.println("The Handy Calculator \n"+
+		"helping high school and college students with their Math-related classes since 2016");
+	}
 	public static void mainmenu() {
-		while (loop != 0) {
-			System.out.println("What would you like to do today sir?\n"+
-			"0 = Quit program\n"+
-			"1 = High School Math \n"+
-			"2 = College Analytic Geometry\n"+
-			"3 = College Calculus\n"+
-			"4 = Percentage Calculations\n"+
-			"5 = Shows program version");
+			  System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      The Handy Calculator             |\n"+
+    					"|           Main Menu                   |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"|        0. Exit                       |\n"+
+    					"|        1. High School Math           |\n"+
+    					"|        2 = College Analytic Geometry |\n"+
+    					"|        3 = College Calculus          |\n"+
+    					"|        4 = Percentage Calculations   |\n"+
+    					"|        5 = Shows program version     |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
+
 			try{
 				loop = in.nextInt();
 			}
@@ -65,12 +76,13 @@ class MainMenu{
 					break;
 
 				case 1:
+					System.out.println("Going to High School Math Menu...");
 					HighSchoolMathMenu.hsmathmenu();
 					break;
 
 				case 2:
 					System.out.println("Going to College Analytic Geometry...");
-					System.out.println("Not Implemented yet");
+					AnaGeoMenu.anageomenu();
 					break;
 
 				case 3:
@@ -91,14 +103,13 @@ class MainMenu{
 				default:
 					System.out.println("Erro: Nonexistent option. Try again!");
 					break;   
-			}
 		}
 	}
 	public static void getversion(){
 		System.out.println("The HandyCalculator \n Version 0.051\n"+
 			"Press 1 to return to main menu\n"+
 			"\n"+
-			"Copyright {2016} {Tetration - Rafael Augusto Oliveira} \n"+
+			"The Handy Calculator Copyright {2016} {Tetration - Rafael Augusto Oliveira} \n"+
 			"Contact: (tetration@outlook.com)");
 		try{
 			loop=in.nextInt();

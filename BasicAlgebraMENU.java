@@ -29,14 +29,29 @@ class BasicAlgebraMENU{
 	static Scanner in=new Scanner(System.in);
 	static int loop = -1;
 	public static void basicalgemenu() {
-		while (loop != 0) {
-			System.out.println("What would you like to do today sir?\n"+
-			"0 = Return to HighSchool math menu\n"+
-			"1 = sum operation \n"+
-			"2 = subtract operation \n"+
-			"3 = 2 number multiplication\n"+
-			"4 = 2 number division\n"+
-			"5 = Quadratic Equations Solver");
+		System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      Basic Algebra Menu              |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"| 0. Return to HighSchool Math Menu    |\n"+
+    					"|				                        |\n"+
+    					"| 1.  Sum Operation                    |\n"+ 
+    					"|				                        |\n"+
+    					"|				                        |\n"+
+    					"| 2.  Subtract Operation               |\n"+ 
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 3 = Multiplication Operation         |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 4 =  Division Operation              |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Quadratic Equations Solver       |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
 			try{
 				loop = in.nextInt();
 			}
@@ -84,7 +99,6 @@ class BasicAlgebraMENU{
 					System.out.println("Error: not avaliable"); 
 					break;  
 			}
-		}
 	}
 }
 class BasicAlgebra{

@@ -6,13 +6,29 @@ class CollegeCalcMenu{
 static Scanner in=new Scanner(System.in);
 	static int loop = -1;
 	public static void ccalcmenu() {
-		while (loop != 0) {
-			System.out.println("College Calculus Menu \n What would you like to do today sir?\n"+
-			"0 = Return to Mainmenu\n"+
-			"1 = Calculus I\n"+
-			"2 = Calculus II\n"+
-			"3 = Calculus III\n"+
-			"4 = Calculus IV");
+		System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      College Calculus Menu            |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"| 0. Return to MainMenu                |\n"+
+    					"|				                        |\n"+
+    					"| 1.  Calculus I                       |\n"+ 
+    					"|				                        |\n"+
+    					"|				                        |\n"+
+    					"| 2.  Calculus II                      |\n"+ 
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 3 =  Calculus III                    |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 4 =  Calculus IV                     |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Not implemented yet              |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
 			try{
 				loop = in.nextInt();
 			}
@@ -51,6 +67,5 @@ static Scanner in=new Scanner(System.in);
 					System.out.println("Error: not avaliable"); 
 					break;  
 			}
-		}
 	}
 }

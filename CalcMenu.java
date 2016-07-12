@@ -6,7 +6,29 @@ class CalcMenu{
 static Scanner in=new Scanner(System.in);
 	static int loop = -1;
 	public static void calcmenu() {
-		while (loop != 0) {
+		System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      Calculus 1 Menu                  |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"| 0. Return to CollegeCalculus Menu    |\n"+
+    					"|				                        |\n"+
+    					"| 1.  Not implemented yet              |\n"+ 
+    					"|				                        |\n"+
+    					"|				                        |\n"+
+    					"| 2.  Not implemented yet              |\n"+ 
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 3 =  Not implemented yet             |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 4 =  Not implemented yet             |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Not implemented yet              |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
 			System.out.println("Calculus 1 Menu \n What would you like to do today sir?\n"+
 			"0 = Return to College Calculus Menu\n"+
 			"1 = Not implemented yet\n"+
@@ -50,6 +72,6 @@ static Scanner in=new Scanner(System.in);
 					System.out.println("Error: not avaliable"); 
 					break;  
 			}
-		}
+		
 	}
 }

@@ -29,14 +29,29 @@ class PercentMenu{
 	static Scanner in=new Scanner(System.in);
 	static int loop= -1;
 	public static void percentmenu (){
-		while (loop!=0) {
-			System.out.println("Percentage Calculations Menu: \n"+
-			"What kind of percentage calculation would you like to do?\n"+
-			"01- Add a percentual value to a decimal or integer value \n"+
-			"02- Subtract a percentual value to a decimal or integer value \n"+
-			"03- Multiply a percentual value to a decimal or integer value\n"+
-			"04- Divide a percentual value to a decimal or integer value\n"+
-			"05- Not implemented yet");
+		System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      Percentage Calculations          |\n"+
+    					"|           Menu                        |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"|        0. Return to MainMenu         |\n"+
+    					"|1. Add a percentual value to a decimal|\n"+ 
+    					"|				or integer value        |\n"+
+    					"|				                        |\n"+
+    					"|2. Subtract a percentual value to a   |\n"+ 
+    					"|	a decimal or integer value          |\n"+
+    					"|				                        |\n"+
+    					"|3 = Multiply a percentual value to a  |\n"+
+    					"| decimal or integer value             |\n"+
+    					"|				                        |\n"+
+    					"|4 = Divide a percentual value to a    |\n"+
+    					"| decimal or integer value             |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Not implemented yet              |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
 			try {
 				loop=in.nextInt();
 			}
@@ -50,6 +65,9 @@ class PercentMenu{
 				in.nextLine();
    			}
    			switch (loop) {
+   				case 0:
+   					System.out.println("Returning to MainMenu...");
+   					MainMenu.mainmenu();
    				case 1:
    					System.out.println("Going to Adding a percentual value to a number tool... ");
    					PercentCalc.percentualsum();
@@ -78,9 +96,7 @@ class PercentMenu{
    				System.out.println("Erro: Nonexistent option. Try again!");
 					break;
 
-   				}
-		}
-
+   			}
 	}
 }
 

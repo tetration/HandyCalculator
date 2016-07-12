@@ -28,15 +28,29 @@ class AnaGeoMenu{
 	static Scanner in=new Scanner(System.in);
 	static int loop= -1;
 	public static void anageomenu (){
-		while (loop!=0) {
-			System.out.println("Analytic Geometry Menu: \n"+
-			"What would you like to do?\n"+
-			" 0- Return to Mainmenu\n"+
-			"01- Cartesian coordinate system \n"+
-			"02- Cartesian coordinate system \n"+
-			"03- \n"+
-			"04- \n"+
-			"05-");
+			System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      Analytic Geometry Menu          |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"| 0. Return to MainMenu                |\n"+
+    					"|				                        |\n"+
+    					"| 1.  Cartesian Coordinate System      |\n"+ 
+    					"|				                        |\n"+
+    					"|				                        |\n"+
+    					"| 2.  Cartesian Coordinate System      |\n"+ 
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 3 = Nothing yet                      |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 4 =  Nothing yet                     |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Nothing yet                      |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
 			try {
 				System.out.println("something");
 				loop=in.nextInt();
@@ -81,7 +95,5 @@ class AnaGeoMenu{
 					break;
 
    				}
-		}
-
 	}
 }

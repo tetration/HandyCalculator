@@ -5,14 +5,30 @@ class HSGEOMenu {
 	static Scanner in=new Scanner(System.in);
 	static int loop = -1;
 	public static void hsgeomenu(){
-		while (loop != 0) {
-			System.out.println("High School Geometry Menu\n"+
-			"What would you like to do today sir? \n"+
-			"0 = Return to High School Math Menu\n"+
-			"1 = Trigonometry \n"+
-			"2 = Something else \n" +
-			"3 = Something else \n" +
-			"4 = Something else");
+			System.out.println("\n"+
+			  			"========================================\n"+
+    					"|      Analytic Geometry Menu          |\n"+
+    					"========================================\n"+
+    					"| Options:                             |\n"+
+    					"| 0. Return to High School Math Menu   |\n"+
+    					"|				                        |\n"+
+    					"| 1.  Trigonometry                     |\n"+ 
+    					"|				                        |\n"+
+    					"|				                        |\n"+
+    					"| 2.  Nothing yet                      |\n"+ 
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 3 = Nothing yet                      |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 4 =  Nothing yet                     |\n"+
+    					"|                                      |\n"+
+    					"|				                        |\n"+
+    					"| 5 = Nothing yet                      |\n"+
+    					"|                                      |\n"+
+    					"========================================\n"+
+    					"Select an Option by typing the correct Number:\n");
+
 			try{
 				loop = in.nextInt();
 			}
@@ -56,6 +72,5 @@ class HSGEOMenu {
 					System.out.println("Error: Nonexistant Option. Try again!");
 					break;   
 			}
-		}
 	}
 }

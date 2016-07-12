@@ -4,20 +4,56 @@
 		"selected_items":
 		[
 			[
-				"HS",
-				"HighSchoolMathMenu"
+				"n",
+				"n"
 			],
 			[
-				"main",
-				"mainmenu"
+				"Ma",
+				"MainMenu"
+			],
+			[
+				"perce",
+				"percentdivision"
+			],
+			[
+				"percentual",
+				"percentmultiplication"
+			],
+			[
+				"percent",
+				"percentsubtraction"
+			],
+			[
+				"div",
+				"dividing"
+			],
+			[
+				"Sub",
+				"subtracting"
+			],
+			[
+				"per",
+				"percentsubtraction"
+			],
+			[
+				"Perce",
+				"PercentCalc"
+			],
+			[
+				"Per",
+				"PercentMenu"
 			],
 			[
 				"next",
-				"nextInt"
+				"nextDouble"
 			],
 			[
-				"n",
-				"n"
+				"main",
+				"Mainmenu"
+			],
+			[
+				"HS",
+				"HighSchoolMathMenu"
 			],
 			[
 				"A",
@@ -231,31 +267,23 @@
 			"file": "HandyCalculator.java",
 			"settings":
 			{
-				"buffer_size": 3249,
+				"buffer_size": 4547,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "AnaGeoMenu.java",
+			"file": "PercentMenu.java",
 			"settings":
 			{
-				"buffer_size": 1373,
+				"buffer_size": 9369,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "HighSchoolMathMenu.java",
+			"file": "CalcMenu.java",
 			"settings":
 			{
-				"buffer_size": 2141,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "HSGEOMenu.java",
-			"settings":
-			{
-				"buffer_size": 1340,
+				"buffer_size": 1302,
 				"line_ending": "Windows"
 			}
 		},
@@ -263,7 +291,31 @@
 			"file": "BasicAlgebraMENU.java",
 			"settings":
 			{
-				"buffer_size": 11984,
+				"buffer_size": 12012,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "AnaGeoMenu.java",
+			"settings":
+			{
+				"buffer_size": 2427,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "HighSchoolMathMenu.java",
+			"settings":
+			{
+				"buffer_size": 2140,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "HSGEOMenu.java",
+			"settings":
+			{
+				"buffer_size": 1463,
 				"line_ending": "Windows"
 			}
 		},
@@ -279,24 +331,8 @@
 			"file": "CollegeCalcMenu.java",
 			"settings":
 			{
-				"buffer_size": 1244,
+				"buffer_size": 1278,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Rafael/Documents/GITHub Projects/Trabcircu/CircuMan.java",
-			"settings":
-			{
-				"buffer_size": 5897,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Rafael/Documents/GITHub Projects/Trabcircu/Circulo.java",
-			"settings":
-			{
-				"buffer_size": 1213,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -341,6 +377,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Rafael/Documents/GITHub Projects/Trabcircu/Circulo.java",
+		"/C/Users/Rafael/Documents/GITHub Projects/Trabcircu/CircuMan.java",
 		"/C/Users/Rafael/Documents/GITHub Projects/HandyCalculator/NumberStorage.java",
 		"/C/Users/Rafael/Desktop/Trabalho Pratico 03/CircuTriangv2/Descartes.java",
 		"/home/freudian/Desktop/circutriang/CircuTriang.java",
@@ -447,15 +485,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3249,
+						"buffer_size": 4547,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3095,
-								3095
+								3713,
+								3713
 							]
 						],
 						"settings":
@@ -464,7 +502,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1891.0,
+						"translation.y": 1971.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -472,19 +510,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "AnaGeoMenu.java",
+					"file": "PercentMenu.java",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1373,
+						"buffer_size": 9369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								369,
-								373
+								2016,
+								2016
 							]
 						],
 						"settings":
@@ -493,27 +531,27 @@
 							"syntax": "Packages/Java/Java.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 60.0,
+						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "HighSchoolMathMenu.java",
+					"file": "CalcMenu.java",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2141,
+						"buffer_size": 1302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1168,
-								1168
+								941,
+								941
 							]
 						],
 						"settings":
@@ -522,27 +560,114 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 755.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "HSGEOMenu.java",
+					"file": "BasicAlgebraMENU.java",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1340,
+						"buffer_size": 12012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1225,
-								1225
+								1859,
+								1859
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "AnaGeoMenu.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1857,
+								1857
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "HighSchoolMathMenu.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1806,
+								1806
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "HSGEOMenu.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								964,
+								964
 							]
 						],
 						"settings":
@@ -550,43 +675,14 @@
 							"syntax": "Packages/Java/Java.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "BasicAlgebraMENU.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11984,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8682,
-								8682
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1520.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "NumberStorage.java",
 					"semi_transient": false,
 					"settings":
@@ -598,8 +694,8 @@
 						"selection":
 						[
 							[
-								1397,
-								1397
+								880,
+								880
 							]
 						],
 						"settings":
@@ -609,27 +705,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "CollegeCalcMenu.java",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1244,
+						"buffer_size": 1278,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								987,
-								968
+								467,
+								467
 							]
 						],
 						"settings":
@@ -637,68 +733,10 @@
 							"syntax": "Packages/Java/Java.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/C/Users/Rafael/Documents/GITHub Projects/Trabcircu/CircuMan.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1706,
-								1706
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1500.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/Rafael/Documents/GITHub Projects/Trabcircu/Circulo.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								995,
-								1034
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 780.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
